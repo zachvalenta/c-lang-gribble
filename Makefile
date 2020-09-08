@@ -4,8 +4,8 @@ help:
 	@echo
 	@echo "🛠 UTILS"
 	@echo
-	@echo "build:        build binary"
-	@echo "run:          run binary"
+	@echo "build:        compile (f=file)"
+	@echo "run:          run"
 	@echo
 
 #
@@ -13,7 +13,7 @@ help:
 #
 
 build:
-	gcc -o output 2-setup.c
+	gcc -o output $(f)
 
 run:
 	./output
